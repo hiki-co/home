@@ -47,72 +47,50 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --radius: 0.75rem;
+  /* hiki co. カラーパレット - 灰紫系 */
+  --background: #f8f7fa;
+  --foreground: #2d2a33;
+  --card: #ffffff;
+  --card-foreground: #2d2a33;
+  --popover: #ffffff;
+  --popover-foreground: #2d2a33;
+  /* hitalinの髪色・目の色から */
+  --primary: #7a6b8a;
+  --primary-foreground: #fafafa;
+  --secondary: #9b8aa8;
+  --secondary-foreground: #ffffff;
+  --muted: #f0eef3;
+  --muted-foreground: #5c5466;
+  --accent: #8b7a9e;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  /* hiki-co.pngの背景色から */
+  --border: #d8d4de;
+  --input: #d8d4de;
+  --ring: #7a6b8a;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* ダークモード - hiki-co.pngの背景色ベース */
+  --background: #1a181e;
+  --foreground: #e8e6ec;
+  --card: #242228;
+  --card-foreground: #e8e6ec;
+  --popover: #242228;
+  --popover-foreground: #e8e6ec;
+  --primary: #9b8aa8;
+  --primary-foreground: #1a181e;
+  --secondary: #7a6b8a;
+  --secondary-foreground: #ffffff;
+  --muted: #2d2a33;
+  --muted-foreground: #a8a0b0;
+  --accent: #8b7a9e;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --border: rgba(155, 138, 168, 0.2);
+  --input: rgba(155, 138, 168, 0.25);
+  --ring: #9b8aa8;
 }
 
 @layer base {
@@ -120,6 +98,192 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    /* yamidao風グラデーション背景 - 灰紫系 */
+    background: linear-gradient(145deg, #f8f7fa, #f0eef5, #ebe8f0);
+    background-attachment: fixed;
+    min-height: 100vh;
   }
+
+  .dark body {
+    background: radial-gradient(ellipse at top, rgba(155, 138, 168, 0.15), transparent 50%),
+                radial-gradient(ellipse at bottom, rgba(122, 107, 138, 0.15), transparent 50%),
+                #1a181e;
+    background-attachment: fixed;
+  }
+}
+
+/* Custom styles for hiki co. */
+@layer components {
+  .hiki-card {
+    @apply bg-card border border-border rounded-2xl p-6;
+    @apply transition-all duration-300 ease-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .hiki-card:hover {
+    @apply border-border/80;
+    transform: translateY(2px); /* 押し込まれる感じ */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+  }
+
+  .hiki-section {
+    @apply border-t border-border pt-16 space-y-12;
+  }
+
+  .hiki-heading {
+    @apply text-xl font-normal text-muted-foreground mb-2;
+  }
+
+  .hiki-subheading {
+    @apply text-sm text-muted-foreground/60;
+  }
+
+  /* セクション区切り線 - yamidao風グラデーション */
+  .section-divider {
+    height: 2px;
+    width: 4rem;
+    background: linear-gradient(to right, var(--primary), var(--secondary), transparent);
+    border-radius: 9999px;
+    opacity: 0.5;
+  }
+
+  .hiki-link {
+    @apply text-foreground hover:text-primary transition-colors duration-200;
+    @apply hover:underline underline-offset-4;
+  }
+
+  .hiki-stat {
+    @apply text-center p-6 rounded-2xl;
+    @apply bg-secondary/50 border border-border/50;
+    animation: droop 6s ease-in-out infinite;
+  }
+
+  .hiki-stat:nth-child(2) {
+    animation-delay: -2s;
+  }
+
+  .hiki-stat:nth-child(3) {
+    animation-delay: -4s;
+  }
+
+  .hiki-stat-number {
+    @apply text-3xl font-light text-muted-foreground;
+  }
+}
+
+/* Hero背景グラデーション */
+.hero-gradient-top {
+  background: radial-gradient(ellipse at center top, rgba(122, 107, 138, 0.25), rgba(155, 138, 168, 0.1) 50%, transparent 70%);
+}
+
+.hero-gradient-bottom {
+  background: radial-gradient(ellipse at bottom right, rgba(139, 122, 158, 0.2), rgba(122, 107, 138, 0.05) 50%, transparent 70%);
+}
+
+/* Background decorations - もやもやアニメーション */
+.bg-blur-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  pointer-events: none;
+  animation: blob 25s ease-in-out infinite;
+}
+
+.bg-blur-circle:nth-child(2) {
+  animation-delay: -8s;
+  animation-duration: 30s;
+}
+
+.bg-blur-circle:nth-child(3) {
+  animation-delay: -16s;
+  animation-duration: 35s;
+}
+
+/* もやもや blob アニメーション */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.5;
+  }
+  20% {
+    transform: translate(30px, -50px) scale(1.1);
+    opacity: 0.4;
+  }
+  40% {
+    transform: translate(-20px, 20px) scale(0.9);
+    opacity: 0.6;
+  }
+  60% {
+    transform: translate(20px, 40px) scale(1.05);
+    opacity: 0.45;
+  }
+  80% {
+    transform: translate(-30px, -20px) scale(0.95);
+    opacity: 0.55;
+  }
+}
+
+/* Monyon animation - ゆるふわ浮遊 */
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(10px, -15px) scale(1.02);
+  }
+  50% {
+    transform: translate(-5px, 10px) scale(0.98);
+  }
+  75% {
+    transform: translate(-10px, -5px) scale(1.01);
+  }
+}
+
+/* ふにゃふにゃ揺れ */
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0.5deg);
+  }
+  75% {
+    transform: rotate(-0.5deg);
+  }
+}
+
+/* ゆっくり呼吸 */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.01);
+    opacity: 0.95;
+  }
+}
+
+/* だらーん */
+@keyframes droop {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* Selection style */
+::selection {
+  background-color: #737373;
+  color: #fafafa;
 }
