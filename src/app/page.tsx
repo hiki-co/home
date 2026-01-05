@@ -115,23 +115,23 @@ export default function HomePage() {
 
           <div className="space-y-8">
             <div className="space-y-2">
-              <h4 className="font-medium text-gray-900">案件の共同受注</h4>
+              <h4 className="font-medium text-gray-900">ECサイト運営</h4>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Web制作、アプリ開発、ライティングなど。やりたい人が手を挙げて分担する。
+                Medusaでネットショップ。せどりとか変なもの売る。何売るかまだ決まってない。
               </p>
             </div>
 
             <div className="space-y-2">
-              <h4 className="font-medium text-gray-900">プロダクト開発</h4>
+              <h4 className="font-medium text-gray-900">Zine発行</h4>
               <p className="text-sm text-gray-600 leading-relaxed">
-                SaaSとか、ツールとか。失敗前提。成功したらラッキー。
+                Ghostでウェブマガジン。ひきこもりの視点から書く。有料コンテンツもやるかも。
               </p>
             </div>
 
             <div className="space-y-2">
-              <h4 className="font-medium text-gray-900">スキルシェア</h4>
+              <h4 className="font-medium text-gray-900">予約販売</h4>
               <p className="text-sm text-gray-600 leading-relaxed">
-                得意なことを時間単位で売る。需要あるかは知らない。
+                Cal.comで相談・メンタリング。レンタルひきこもり的なやつ。需要あるか知らない。
               </p>
             </div>
           </div>
