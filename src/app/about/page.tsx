@@ -35,7 +35,7 @@ export default function AboutPage() {
             <div className="hiki-card-interactive animate-fade-in-up stagger-3">
               <h2 className="text-xl font-light text-muted-foreground mb-4 gradient-text">組織形態</h2>
               <p className="text-muted-foreground">
-                組織でも会社でもない。個人事業主の緩い連合体。
+                個人事業主の緩い連合体。いつか合同会社になるかもしれない。
                 できる人ができることをやる。やれる範囲で。
               </p>
             </div>
