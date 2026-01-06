@@ -74,7 +74,7 @@ export default function ActivityPage() {
                   </div>
                   <div className="hiki-card border-l-2 border-l-muted-foreground/30">
                     <h4 className="text-sm text-muted-foreground mb-2">食</h4>
-                    <p className="text-xs text-muted-foreground">カフェとかシーシャとかCBDとか。脳を調律しながらイベントもできるスペース。</p>
+                    <p className="text-xs text-muted-foreground">カフェとか。イベントもできるスペース。</p>
                   </div>
                   <div className="hiki-card border-l-2 border-l-muted-foreground/30">
                     <h4 className="text-sm text-muted-foreground mb-2">住</h4>
