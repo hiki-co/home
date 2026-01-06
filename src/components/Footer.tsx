@@ -18,8 +18,8 @@ export function Footer() {
             <Link href="/join" className="hover:opacity-80 transition-opacity">はいる</Link>
           </div>
         </div>
-        <div className="mt-8 text-xs text-muted-foreground/60">
-          © 2025 hiki co. (たぶん)
+        <div className="mt-8 text-xs text-muted-foreground/60 text-center">
+          © 2026 hiki co. All rights reserved.
         </div>
       </div>
     </footer>
