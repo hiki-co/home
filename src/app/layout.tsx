@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Zen_Kurenaido } from "next/font/google";
+import { Kosugi_Maru } from "next/font/google";
 import "./globals.css";
 
-const zenKurenaido = Zen_Kurenaido({
+const kosugiMaru = Kosugi_Maru({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-zen-kurenaido",
+  variable: "--font-kosugi-maru",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${zenKurenaido.variable} font-sans antialiased`}
+        className={`${kosugiMaru.variable} font-sans antialiased`}
       >
         {children}
       </body>
