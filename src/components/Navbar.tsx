@@ -7,9 +7,9 @@ import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { href: '/about', label: 'About' },
-  { href: '/activity', label: 'Activity' },
-  { href: '/vision', label: 'Vision' },
+  { href: '/about', label: 'これなに' },
+  { href: '/activity', label: 'やってること' },
+  { href: '/vision', label: 'かんがえ' },
 ]
 
 export function Navbar() {
@@ -92,7 +92,7 @@ export function Navbar() {
               href="/join"
               className="hiki-btn hover-lift text-sm py-2 px-4"
             >
-              Join
+              はいる
             </Link>
           </div>
 
@@ -142,7 +142,7 @@ export function Navbar() {
                 className="hiki-btn hover-lift text-sm py-2 px-4 text-center mt-2 animate-fade-in-up stagger-4"
                 onClick={closeMobileMenu}
               >
-                Join
+                はいる
               </Link>
             </div>
           </div>

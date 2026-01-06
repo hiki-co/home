@@ -50,13 +50,13 @@ export default function HomePage() {
               href="/join"
               className="hiki-btn hover-lift inline-flex items-center gap-2 text-base py-3 px-8"
             >
-              Join
+              はいる
             </Link>
             <Link
               href="/about"
               className="hiki-btn-secondary hover-lift inline-flex items-center gap-2 text-base py-3 px-8"
             >
-              Learn More →
+              これなに →
             </Link>
           </div>
         </div>
