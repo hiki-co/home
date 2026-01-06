@@ -7,9 +7,9 @@ export default function ActivityPage() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="mb-10 animate-fade-in-up">
-            <h1 className="text-3xl md:text-4xl font-light text-muted-foreground mb-4">やってること</h1>
+            <h1 className="text-3xl md:text-4xl font-light text-muted-foreground mb-4">やりたいこと</h1>
             <div className="section-divider mb-4"></div>
-            <p className="text-lg text-muted-foreground">やってること・やりたいこと</p>
+            <p className="text-lg text-muted-foreground">妄想とロードマップ</p>
           </div>
 
           {/* Current Activities */}
@@ -53,7 +53,7 @@ export default function ActivityPage() {
 
           {/* Future Plans */}
           <div className="mb-10 animate-fade-in-up stagger-2">
-            <h2 className="text-xl font-light text-muted-foreground mb-6">やりたいカテゴリ</h2>
+            <h2 className="text-xl font-light text-muted-foreground mb-6">作りたい場所（妄想）</h2>
 
             <div className="glass rounded-xl p-6">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">

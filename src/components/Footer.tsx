@@ -12,10 +12,10 @@ export function Footer() {
             <div className="text-xs">家から出ないけど、生きていく</div>
           </div>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 text-xs">
-            <Link href="/about" className="hover:opacity-80 transition-opacity">About</Link>
-            <Link href="/activity" className="hover:opacity-80 transition-opacity">Activity</Link>
-            <Link href="/vision" className="hover:opacity-80 transition-opacity">Vision</Link>
-            <Link href="/join" className="hover:opacity-80 transition-opacity">Join</Link>
+            <Link href="/about" className="hover:opacity-80 transition-opacity">これなに</Link>
+            <Link href="/activity" className="hover:opacity-80 transition-opacity">やりたいこと</Link>
+            <Link href="/vision" className="hover:opacity-80 transition-opacity">かんがえ</Link>
+            <Link href="/join" className="hover:opacity-80 transition-opacity">はいる</Link>
           </div>
         </div>
         <div className="mt-8 text-xs text-muted-foreground/60">
