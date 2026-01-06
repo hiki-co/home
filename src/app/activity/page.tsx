@@ -55,26 +55,23 @@ export default function ActivityPage() {
           <div className="mb-10 animate-fade-in-up stagger-2">
             <h2 className="text-xl font-light text-muted-foreground mb-6">作りたい場所（妄想）</h2>
 
-            <div className="glass rounded-xl p-6">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-                <div className="hiki-card-interactive border-l-2 border-l-primary/40">
-                  <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">衣</h4>
-                  <p className="text-xs text-muted-foreground">古着屋とか</p>
-                </div>
-                <div className="hiki-card-interactive border-l-2 border-l-primary/40">
-                  <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">食</h4>
-                  <p className="text-xs text-muted-foreground">カフェとか</p>
-                </div>
-                <div className="hiki-card-interactive border-l-2 border-l-primary/40">
-                  <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">住</h4>
-                  <p className="text-xs text-muted-foreground">シェアハウスとか</p>
-                </div>
-                <div className="hiki-card-interactive border-l-2 border-l-primary/40">
-                  <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">心</h4>
-                  <p className="text-xs text-muted-foreground">居場所とか</p>
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="hiki-card-interactive border-l-2 border-l-primary/40">
+                <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">衣</h4>
+                <p className="text-xs text-muted-foreground">古着屋とか</p>
               </div>
-              <p className="text-xs text-muted-foreground text-center">妄想段階。実現するかは知らない。</p>
+              <div className="hiki-card-interactive border-l-2 border-l-primary/40">
+                <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">食</h4>
+                <p className="text-xs text-muted-foreground">カフェとか</p>
+              </div>
+              <div className="hiki-card-interactive border-l-2 border-l-primary/40">
+                <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">住</h4>
+                <p className="text-xs text-muted-foreground">シェアハウスとか</p>
+              </div>
+              <div className="hiki-card-interactive border-l-2 border-l-primary/40">
+                <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">心</h4>
+                <p className="text-xs text-muted-foreground">居場所とか</p>
+              </div>
             </div>
           </div>
 
