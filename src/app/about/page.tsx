@@ -4,84 +4,81 @@ export default function AboutPage() {
   return (
     <PageLayout>
       <div className="py-16 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="mb-12">
+          <div className="mb-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl font-light text-muted-foreground mb-4">About</h1>
             <div className="section-divider mb-4"></div>
             <p className="text-lg text-muted-foreground">家から出ないで稼ぐための緩い集まり</p>
           </div>
 
-          {/* Main Content */}
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* What is hiki co. */}
-            <section className="hiki-card">
-              <h2 className="text-xl font-light text-muted-foreground mb-4">hiki co.とは</h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  基本家から出ない人たちが集まって、ゆるく仕事して、ゆるく稼ぐ。
-                  個人事業主やマイクロ法人持ってる人の緩い連合体。
-                </p>
-                <p>
-                  「ひきこもり」って言葉は重いかもしれないけど、ここではもっとカジュアルに使ってる。
-                  理由は問わない。病気でも、性格でも、単に外が嫌いでも。
-                  家から出ない生活をしてる人、それでいい。
-                </p>
-              </div>
-            </section>
+            <div className="glass rounded-2xl p-6 animate-fade-in-up stagger-1">
+              <h2 className="text-xl font-light text-muted-foreground mb-4 gradient-text">hiki co.とは</h2>
+              <p className="text-muted-foreground">
+                家から出ない人たちが集まって、ゆるく仕事して、ゆるく稼ぐ。
+                「ひきこもり」をカジュアルに。理由は問わない。
+              </p>
+            </div>
 
             {/* What we are not */}
-            <section className="hiki-card">
-              <h2 className="text-xl font-light text-muted-foreground mb-4">やらないこと</h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  就労支援とかじゃない。「社会復帰」とか言わない。
-                  家から出ることを目標にしない。
-                </p>
-                <p>
-                  家から出ないまま生きていくための仕組みを、なんとなく作る。
-                  それだけ。
-                </p>
-              </div>
-            </section>
+            <div className="hiki-card-interactive animate-fade-in-up stagger-2">
+              <h2 className="text-xl font-light text-muted-foreground mb-4 gradient-text">スタンス</h2>
+              <p className="text-muted-foreground">
+                就労支援じゃない。外出を目標にしない。
+                家から出ないまま生きていく仕組みを作る。
+              </p>
+            </div>
+
+            {/* Structure */}
+            <div className="hiki-card-interactive animate-fade-in-up stagger-3">
+              <h2 className="text-xl font-light text-muted-foreground mb-4 gradient-text">組織形態</h2>
+              <p className="text-muted-foreground">
+                組織でも会社でもない。個人事業主の緩い連合体。
+                できる人ができることをやる。やれる範囲で。
+              </p>
+            </div>
 
             {/* Future Vision */}
-            <section className="hiki-card">
-              <h2 className="text-xl font-light text-muted-foreground mb-4">いつかやりたいこと</h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  衣食住と心をサブカル的にゆるく提供できたらいいな、くらいの温度感。
-                </p>
-                <p>
-                  オンラインから始めて、いつかリアルな拠点も。
-                  古着屋、カフェ、シェアハウス、自助会、勉強会。
-                  社会不適合者でも最低限生きていける仕組み。胡散臭いけど本気。
-                </p>
-              </div>
-            </section>
+            <div className="glass rounded-2xl p-6 glow animate-fade-in-up stagger-4">
+              <h2 className="text-xl font-light text-muted-foreground mb-4 gradient-text">いつかやりたいこと</h2>
+              <p className="text-muted-foreground">
+                衣食住と心をゆるく提供する。古着屋、カフェ、シェアハウス、居場所。
+                まあ、そのうち。
+              </p>
+            </div>
+          </div>
 
-            {/* FAQ */}
-            <section>
-              <h2 className="text-xl font-light text-muted-foreground mb-6">FAQ</h2>
-              <div className="space-y-3">
-                <div className="hiki-card">
-                  <div className="text-sm text-muted-foreground mb-1">Q. hiki co.って何？</div>
-                  <div className="text-xs text-muted-foreground">A. 家から出ない人たちの緩い集まり。個人事業主とかマイクロ法人とか。</div>
-                </div>
-                <div className="hiki-card">
-                  <div className="text-sm text-muted-foreground mb-1">Q. ガチのひきこもりじゃないとダメ？</div>
-                  <div className="text-xs text-muted-foreground">A. 別に。基本家にいる人ならOK。理由は聞かない。</div>
-                </div>
-                <div className="hiki-card">
-                  <div className="text-sm text-muted-foreground mb-1">Q. 本当に稼げるの？</div>
-                  <div className="text-xs text-muted-foreground">A. まだわからない。でもやってみる。</div>
-                </div>
-                <div className="hiki-card">
-                  <div className="text-sm text-muted-foreground mb-1">Q. 会社なの？</div>
-                  <div className="text-xs text-muted-foreground">A. 今は個人事業主1人。将来的にマイクロ法人化するかも。</div>
-                </div>
+          {/* How to earn */}
+          <div className="mt-6 animate-fade-in-up stagger-5">
+            <h2 className="text-xl font-light text-muted-foreground mb-4">稼ぎ方の構造</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              <div className="hiki-card-interactive">
+                <h4 className="text-sm text-muted-foreground gradient-text font-medium mb-1">時間のズレ</h4>
+                <p className="text-xs text-muted-foreground">深夜も早朝も平日昼間も空いてる</p>
               </div>
-            </section>
+              <div className="hiki-card-interactive">
+                <h4 className="text-sm text-muted-foreground gradient-text font-medium mb-1">集中の深さ</h4>
+                <p className="text-xs text-muted-foreground">社会生活のノイズがない</p>
+              </div>
+              <div className="hiki-card-interactive">
+                <h4 className="text-sm text-muted-foreground gradient-text font-medium mb-1">匿名でいい</h4>
+                <p className="text-xs text-muted-foreground">顔も声も名前も要らない経済圏</p>
+              </div>
+              <div className="hiki-card-interactive">
+                <h4 className="text-sm text-muted-foreground gradient-text font-medium mb-1">中間コスト零</h4>
+                <p className="text-xs text-muted-foreground">通勤もオフィスも会議室も無い</p>
+              </div>
+              <div className="hiki-card-interactive">
+                <h4 className="text-sm text-muted-foreground gradient-text font-medium mb-1">周縁の視点</h4>
+                <p className="text-xs text-muted-foreground">中心にいると見えないものが見える</p>
+              </div>
+              <div className="hiki-card-interactive">
+                <h4 className="text-sm text-muted-foreground gradient-text font-medium mb-1">低い固定費</h4>
+                <p className="text-xs text-muted-foreground">生活コストが低いから少額でも回る</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

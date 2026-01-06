@@ -4,135 +4,112 @@ export default function ActivityPage() {
   return (
     <PageLayout>
       <div className="py-16 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="mb-12">
+          <div className="mb-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl font-light text-muted-foreground mb-4">Activity</h1>
             <div className="section-divider mb-4"></div>
             <p className="text-lg text-muted-foreground">やってること・やりたいこと</p>
           </div>
 
           {/* Current Activities */}
-          <div className="mb-12">
+          <div className="mb-10 animate-fade-in-up stagger-1">
             <h2 className="text-xl font-light text-muted-foreground mb-6">今やってること</h2>
-            <p className="text-sm text-muted-foreground mb-6">できることから、ゆるく</p>
 
-            <div className="space-y-4">
-              <div className="hiki-card">
-                <h3 className="text-lg text-muted-foreground mb-2">通販</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  ネットショップで何か売る。古着とか変なものとか。まだ何売るか決まってない。
-                </p>
-                <div className="text-xs text-muted-foreground/60">
-                  Medusaでオープンソースのショップ構築予定。家から出なくても仕入れから発送までできる仕組みを考え中。
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="hiki-card-interactive group">
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="text-lg text-muted-foreground">通販</h3>
+                  <span className="hiki-tag-peach">準備中</span>
                 </div>
+                <p className="text-sm text-muted-foreground">古着とか売る。何売るかは決まってない。</p>
               </div>
 
-              <div className="hiki-card">
-                <h3 className="text-lg text-muted-foreground mb-2">Zine</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  ウェブマガジン的なやつ。ひきこもりの視点から書く。
-                </p>
-                <div className="text-xs text-muted-foreground/60">
-                  Ghostでウェブマガジン。日常のこと、考えてること、レビューとか。有料コンテンツもやるかも。
+              <div className="hiki-card-interactive group">
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="text-lg text-muted-foreground">メディア</h3>
+                  <span className="hiki-tag-sky">準備中</span>
                 </div>
+                <p className="text-sm text-muted-foreground">ブログとかマガジンとか。ひきこもり視点で。</p>
               </div>
 
-              <div className="hiki-card">
-                <h3 className="text-lg text-muted-foreground mb-2">ウェブ制作</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  家から出なくてもできる仕事を受ける。
-                </p>
-                <div className="text-xs text-muted-foreground/60">
-                  ウェブサイト制作とか。スキルある人が受けて、なんとなく分配する感じ。
+              <div className="hiki-card-interactive group">
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="text-lg text-muted-foreground">受注</h3>
+                  <span className="hiki-tag-mint">準備中</span>
                 </div>
+                <p className="text-sm text-muted-foreground">制作とか管理とか。家からできる仕事。</p>
               </div>
 
-              <div className="hiki-card">
-                <h3 className="text-lg text-muted-foreground mb-2">相談</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  レンタルひきこもり的なやつ。需要あるか知らない。
-                </p>
-                <div className="text-xs text-muted-foreground/60">
-                  Cal.comで予約受付。話し相手とか、ひきこもり生活のコツとか、IT相談とか。有料にするかは検討中。
+              <div className="hiki-card-interactive group">
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="text-lg text-muted-foreground">相談</h3>
+                  <span className="hiki-tag">検討中</span>
                 </div>
+                <p className="text-sm text-muted-foreground">話し相手とかIT相談とか。需要あるか知らない。</p>
               </div>
             </div>
           </div>
 
           {/* Future Plans */}
-          <div className="mb-12">
+          <div className="mb-10 animate-fade-in-up stagger-2">
             <h2 className="text-xl font-light text-muted-foreground mb-6">将来やりたいこと</h2>
-            <p className="text-sm text-muted-foreground mb-6">妄想段階。実現するかは知らない。</p>
 
-            <div className="rounded-xl border border-border/50 overflow-hidden">
-              <div className="p-6 bg-card/30">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="hiki-card border-l-2 border-l-muted-foreground/30">
-                    <h4 className="text-sm text-muted-foreground mb-2">衣</h4>
-                    <p className="text-xs text-muted-foreground">古着屋とか。安くてちょっといい服。リアル店舗もやりたい。</p>
-                  </div>
-                  <div className="hiki-card border-l-2 border-l-muted-foreground/30">
-                    <h4 className="text-sm text-muted-foreground mb-2">食</h4>
-                    <p className="text-xs text-muted-foreground">カフェとか。イベントもできるスペース。</p>
-                  </div>
-                  <div className="hiki-card border-l-2 border-l-muted-foreground/30">
-                    <h4 className="text-sm text-muted-foreground mb-2">住</h4>
-                    <p className="text-xs text-muted-foreground">シェアハウスとか。最低限の住居を安く。ひきこもりでも住める場所。</p>
-                  </div>
-                  <div className="hiki-card border-l-2 border-l-muted-foreground/30">
-                    <h4 className="text-sm text-muted-foreground mb-2">心</h4>
-                    <p className="text-xs text-muted-foreground">自助会とか勉強会とか。ゆるい繋がりと居場所。ITで繋ぐ。</p>
-                  </div>
+            <div className="glass rounded-xl p-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                <div className="hiki-card-interactive border-l-2 border-l-primary/40">
+                  <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">衣</h4>
+                  <p className="text-xs text-muted-foreground">古着屋とか</p>
+                </div>
+                <div className="hiki-card-interactive border-l-2 border-l-primary/40">
+                  <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">食</h4>
+                  <p className="text-xs text-muted-foreground">カフェとか</p>
+                </div>
+                <div className="hiki-card-interactive border-l-2 border-l-primary/40">
+                  <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">住</h4>
+                  <p className="text-xs text-muted-foreground">シェアハウスとか</p>
+                </div>
+                <div className="hiki-card-interactive border-l-2 border-l-primary/40">
+                  <h4 className="text-sm text-muted-foreground mb-1 gradient-text font-medium">心</h4>
+                  <p className="text-xs text-muted-foreground">居場所とか</p>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-6 p-4 bg-muted/10 rounded-lg">
-              <p className="text-xs text-muted-foreground">
-                社会不適合者でも最低限生きていける仕組み。ベーシックインカム的な生活インフラ。
-                胡散臭いけど本気。オンラインから始めて、いつかリアルな拠点も。
-              </p>
+              <p className="text-xs text-muted-foreground text-center">妄想段階。実現するかは知らない。</p>
             </div>
           </div>
 
           {/* Roadmap */}
-          <div>
+          <div className="animate-fade-in-up stagger-3">
             <h2 className="text-xl font-light text-muted-foreground mb-6">ロードマップ（妄想）</h2>
-            <p className="text-sm text-muted-foreground mb-6">実現するかは知らない</p>
 
-            <div className="relative">
-              <div className="absolute left-4 top-0 bottom-0 w-px bg-border/50"></div>
-
-              <div className="space-y-4">
-                <div className="relative pl-10">
-                  <div className="absolute left-2 top-2 w-4 h-4 rounded-full bg-muted-foreground/30 border-2 border-background"></div>
-                  <div className="hiki-card py-3 px-4">
-                    <div className="text-xs text-muted-foreground mb-1">Phase 0</div>
-                    <div className="text-sm text-muted-foreground">ホームページ作った ← 今ここ</div>
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+              <div className="hiki-card-interactive">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs text-muted-foreground/60">Phase 0</span>
+                  <span className="hiki-tag-mint text-xs">✓</span>
                 </div>
-                <div className="relative pl-10">
-                  <div className="absolute left-2 top-2 w-4 h-4 rounded-full bg-border border-2 border-background"></div>
-                  <div className="hiki-card py-3 px-4 opacity-80">
-                    <div className="text-xs text-muted-foreground mb-1">Phase 1</div>
-                    <div className="text-sm text-muted-foreground">Slackで仲間集める（かも）</div>
-                  </div>
+                <p className="text-sm text-muted-foreground">ホームページ作る</p>
+              </div>
+              <div className="hiki-card-interactive">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs text-muted-foreground/60">Phase 1</span>
+                  <span className="hiki-tag-peach text-xs">次</span>
                 </div>
-                <div className="relative pl-10">
-                  <div className="absolute left-2 top-2 w-4 h-4 rounded-full bg-border border-2 border-background"></div>
-                  <div className="hiki-card py-3 px-4 opacity-60">
-                    <div className="text-xs text-muted-foreground mb-1">Phase 2</div>
-                    <div className="text-sm text-muted-foreground">オンラインでなんか売る（たぶん）</div>
-                  </div>
+                <p className="text-sm text-muted-foreground">Discordで仲間募集</p>
+              </div>
+              <div className="hiki-card-interactive">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs text-muted-foreground/60">Phase 2</span>
+                  <span className="hiki-tag text-xs">いつか</span>
                 </div>
-                <div className="relative pl-10">
-                  <div className="absolute left-2 top-2 w-4 h-4 rounded-full bg-border border-2 border-background"></div>
-                  <div className="hiki-card py-3 px-4 opacity-40">
-                    <div className="text-xs text-muted-foreground mb-1">Phase ???</div>
-                    <div className="text-sm text-muted-foreground">ひきこもりでも生きていける</div>
-                  </div>
+                <p className="text-sm text-muted-foreground">何か売り始める</p>
+              </div>
+              <div className="hiki-card-interactive">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs text-muted-foreground/60">Phase 3</span>
+                  <span className="hiki-tag-sky text-xs">夢</span>
                 </div>
+                <p className="text-sm text-muted-foreground">衣食住心の実現</p>
               </div>
             </div>
           </div>

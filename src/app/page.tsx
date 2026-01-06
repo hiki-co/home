@@ -23,38 +23,38 @@ export default function HomePage() {
           <div className="bg-blur-circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-accent/15"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center relative">
+        <div className="max-w-6xl mx-auto text-center relative">
           {/* Icon & Title */}
-          <div className="mb-8 animate-fade-in">
-            <div className="flex justify-center mb-6">
+          <div className="mb-8">
+            <div className="flex justify-center mb-6 animate-scale-in">
               <Image
                 src="/icon.png"
                 alt="hiki co."
                 width={96}
                 height={96}
-                className="w-20 h-20 md:w-24 md:h-24 rounded-2xl"
+                className="w-20 h-20 md:w-24 md:h-24 rounded-2xl glow"
                 priority
               />
             </div>
-            <h1 className="text-5xl md:text-7xl font-light mb-6 text-muted-foreground leading-tight tracking-wide">
+            <h1 className="text-5xl md:text-7xl font-light mb-6 text-muted-foreground leading-tight tracking-wide animate-fade-in-up stagger-1">
               hiki co.
             </h1>
-            <p className="text-base text-muted-foreground">
+            <p className="text-base text-muted-foreground animate-fade-in-up stagger-2">
               家から出ないけど、稼ぐ
             </p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center animate-fade-in-up stagger-3">
             <Link
               href="/join"
-              className="hiki-btn inline-flex items-center gap-2 text-base py-3 px-8"
+              className="hiki-btn hover-lift inline-flex items-center gap-2 text-base py-3 px-8"
             >
               Join
             </Link>
             <Link
               href="/about"
-              className="hiki-btn-secondary inline-flex items-center gap-2 text-base py-3 px-8"
+              className="hiki-btn-secondary hover-lift inline-flex items-center gap-2 text-base py-3 px-8"
             >
               Learn More →
             </Link>

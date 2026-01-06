@@ -58,7 +58,7 @@ export function Navbar() {
           : 'navbar-transparent'
       }`}
     >
-      <div className="max-w-4xl mx-auto px-4 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
@@ -78,19 +78,19 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative text-sm font-light transition-colors hover:text-muted-foreground py-1 ${
+                className={`hiki-link-animated text-sm font-light py-1 ${
                   pathname === link.href ? 'text-muted-foreground' : 'text-muted-foreground/60'
                 }`}
               >
                 {link.label}
                 {pathname === link.href && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-muted-foreground/30 rounded-full" />
+                  <span className="absolute -bottom-0.5 left-0 right-0 h-px bg-primary/50 rounded-full" />
                 )}
               </Link>
             ))}
             <Link
               href="/join"
-              className="hiki-btn text-sm py-2 px-4"
+              className="hiki-btn hover-lift text-sm py-2 px-4"
             >
               Join
             </Link>
@@ -116,22 +116,22 @@ export function Navbar() {
         {isMobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="md:hidden py-4 border-t border-border/50"
+            className="md:hidden py-4 border-t border-border/50 glass animate-fade-in"
             role="menu"
           >
             <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
+              {navLinks.map((link, index) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   role="menuitem"
-                  className={`text-sm font-light transition-colors hover:text-muted-foreground flex items-center gap-2 ${
+                  className={`text-sm font-light transition-colors hover:text-primary flex items-center gap-2 animate-slide-in-right stagger-${index + 1} ${
                     pathname === link.href ? 'text-muted-foreground' : 'text-muted-foreground/60'
                   }`}
                   onClick={closeMobileMenu}
                 >
                   {pathname === link.href && (
-                    <span className="w-1.5 h-1.5 bg-muted-foreground/30 rounded-full" />
+                    <span className="w-1.5 h-1.5 bg-primary/50 rounded-full" />
                   )}
                   {link.label}
                 </Link>
@@ -139,7 +139,7 @@ export function Navbar() {
               <Link
                 href="/join"
                 role="menuitem"
-                className="hiki-btn text-sm py-2 px-4 text-center mt-2"
+                className="hiki-btn hover-lift text-sm py-2 px-4 text-center mt-2 animate-fade-in-up stagger-4"
                 onClick={closeMobileMenu}
               >
                 Join
