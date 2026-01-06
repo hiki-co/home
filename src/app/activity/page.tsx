@@ -14,7 +14,7 @@ export default function ActivityPage() {
 
           {/* Current Activities */}
           <div className="mb-10 animate-fade-in-up stagger-1">
-            <h2 className="text-xl font-light text-muted-foreground mb-6">今やってること</h2>
+            <h2 className="text-xl font-light text-muted-foreground mb-6">やりたいこと（妄想）</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="hiki-card-interactive group">
@@ -53,7 +53,7 @@ export default function ActivityPage() {
 
           {/* Future Plans */}
           <div className="mb-10 animate-fade-in-up stagger-2">
-            <h2 className="text-xl font-light text-muted-foreground mb-6">将来やりたいこと</h2>
+            <h2 className="text-xl font-light text-muted-foreground mb-6">やりたいカテゴリ</h2>
 
             <div className="glass rounded-xl p-6">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
