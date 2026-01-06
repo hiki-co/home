@@ -39,12 +39,12 @@ export default function ActivityPage() {
               </div>
 
               <div className="hiki-card">
-                <h3 className="text-lg text-muted-foreground mb-2">OSS</h3>
+                <h3 className="text-lg text-muted-foreground mb-2">ウェブ制作</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  オープンソース開発。家から出なくてもコードは書ける。
+                  家から出なくてもできる仕事を受ける。
                 </p>
                 <div className="text-xs text-muted-foreground/60">
-                  GitHubでオープンソース開発。ひきこもりでも貢献できる。コード書ける人は書く、書けない人はドキュメントとか翻訳とか。
+                  ウェブサイト制作とか。スキルある人が受けて、なんとなく分配する感じ。
                 </div>
               </div>
 

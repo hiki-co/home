@@ -49,7 +49,7 @@ export default function JoinPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="hiki-card">
                 <h4 className="text-sm text-muted-foreground mb-2">コード書ける人</h4>
-                <p className="text-xs text-muted-foreground">OSS開発、ウェブ制作、自動化とか。</p>
+                <p className="text-xs text-muted-foreground">ウェブ制作、自動化とか。</p>
               </div>
               <div className="hiki-card">
                 <h4 className="text-sm text-muted-foreground mb-2">書ける人</h4>
