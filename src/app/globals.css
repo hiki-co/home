@@ -320,3 +320,40 @@ html {
     animation: octocat-wave 560ms ease-in-out;
   }
 }
+
+/* Navbar */
+.navbar-transparent {
+  background: transparent;
+}
+
+.navbar-scrolled {
+  background: rgba(248, 247, 250, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(216, 212, 222, 0.5);
+}
+
+.dark .navbar-scrolled {
+  background: rgba(26, 24, 30, 0.9);
+  border-bottom: 1px solid rgba(155, 138, 168, 0.2);
+}
+
+/* Buttons */
+.hiki-btn {
+  @apply bg-muted-foreground/10 text-muted-foreground rounded-xl;
+  @apply border border-border/50;
+  @apply transition-all duration-300;
+}
+
+.hiki-btn:hover {
+  @apply bg-muted-foreground/20;
+}
+
+.hiki-btn-secondary {
+  @apply bg-transparent text-muted-foreground rounded-xl;
+  @apply border border-border/50;
+  @apply transition-all duration-300;
+}
+
+.hiki-btn-secondary:hover {
+  @apply bg-muted-foreground/10;
+}
