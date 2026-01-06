@@ -82,58 +82,58 @@
   :root {
     /* ダークモード - hiki-co.pngの背景色ベース */
     --background: #1a181e;
-    --foreground: #e8e6ec;
+    --foreground: #f0eef4;
     --card: #242228;
-    --card-foreground: #e8e6ec;
+    --card-foreground: #f0eef4;
     --popover: #242228;
-    --popover-foreground: #e8e6ec;
-    --primary: #9b8aa8;
+    --popover-foreground: #f0eef4;
+    --primary: #b8a8c8;
     --primary-foreground: #1a181e;
-    --secondary: #7a6b8a;
+    --secondary: #9888a8;
     --secondary-foreground: #ffffff;
     --muted: #2d2a33;
-    --muted-foreground: #a8a0b0;
-    --accent: #8b7a9e;
+    --muted-foreground: #d0c8d8;
+    --accent: #a898b8;
     --accent-foreground: #ffffff;
     --destructive: #dc2626;
-    --border: rgba(155, 138, 168, 0.2);
-    --input: rgba(155, 138, 168, 0.25);
-    --ring: #9b8aa8;
+    --border: rgba(180, 160, 200, 0.25);
+    --input: rgba(180, 160, 200, 0.3);
+    --ring: #b8a8c8;
 
-    /* ダークモード用パステル（やや暗め） */
-    --pastel-mint: #6b9e8e;
-    --pastel-lavender: #8a7a9e;
-    --pastel-peach: #b8948a;
-    --pastel-sky: #7a9ab8;
-    --pastel-cream: #b8a878;
+    /* ダークモード用パステル（明るめに調整） */
+    --pastel-mint: #8ec4b0;
+    --pastel-lavender: #b0a0c0;
+    --pastel-peach: #d8b8a8;
+    --pastel-sky: #a0c0d8;
+    --pastel-cream: #d8c8a0;
   }
 }
 
 /* .dark クラスでの手動切り替え用（将来の拡張） */
 .dark {
   --background: #1a181e;
-  --foreground: #e8e6ec;
+  --foreground: #f0eef4;
   --card: #242228;
-  --card-foreground: #e8e6ec;
+  --card-foreground: #f0eef4;
   --popover: #242228;
-  --popover-foreground: #e8e6ec;
-  --primary: #9b8aa8;
+  --popover-foreground: #f0eef4;
+  --primary: #b8a8c8;
   --primary-foreground: #1a181e;
-  --secondary: #7a6b8a;
+  --secondary: #9888a8;
   --secondary-foreground: #ffffff;
   --muted: #2d2a33;
-  --muted-foreground: #a8a0b0;
-  --accent: #8b7a9e;
+  --muted-foreground: #d0c8d8;
+  --accent: #a898b8;
   --accent-foreground: #ffffff;
   --destructive: #dc2626;
-  --border: rgba(155, 138, 168, 0.2);
-  --input: rgba(155, 138, 168, 0.25);
-  --ring: #9b8aa8;
-  --pastel-mint: #6b9e8e;
-  --pastel-lavender: #8a7a9e;
-  --pastel-peach: #b8948a;
-  --pastel-sky: #7a9ab8;
-  --pastel-cream: #b8a878;
+  --border: rgba(180, 160, 200, 0.25);
+  --input: rgba(180, 160, 200, 0.3);
+  --ring: #b8a8c8;
+  --pastel-mint: #8ec4b0;
+  --pastel-lavender: #b0a0c0;
+  --pastel-peach: #d8b8a8;
+  --pastel-sky: #a0c0d8;
+  --pastel-cream: #d8c8a0;
 }
 
 @layer base {
