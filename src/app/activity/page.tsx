@@ -7,7 +7,7 @@ export default function ActivityPage() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="mb-10 animate-fade-in-up">
-            <h1 className="text-3xl md:text-4xl font-light text-muted-foreground mb-4">Activity</h1>
+            <h1 className="text-3xl md:text-4xl font-light text-muted-foreground mb-4">やってること</h1>
             <div className="section-divider mb-4"></div>
             <p className="text-lg text-muted-foreground">やってること・やりたいこと</p>
           </div>
