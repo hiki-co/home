@@ -1,4 +1,10 @@
+import type { Metadata } from 'next'
 import { PageLayout } from '@/components/PageLayout'
+
+export const metadata: Metadata = {
+  title: 'はいる | hiki co.',
+  description: '参加したい人へ',
+}
 
 export default function JoinPage() {
   return (

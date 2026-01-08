@@ -1,4 +1,10 @@
+import type { Metadata } from 'next'
 import { PageLayout } from '@/components/PageLayout'
+
+export const metadata: Metadata = {
+  title: 'かんがえ | hiki co.',
+  description: '理念。大層なことは言わない。',
+}
 
 export default function VisionPage() {
   return (

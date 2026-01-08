@@ -1,4 +1,10 @@
+import type { Metadata } from 'next'
 import { PageLayout } from '@/components/PageLayout'
+
+export const metadata: Metadata = {
+  title: 'やりたいこと | hiki co.',
+  description: '妄想',
+}
 
 export default function ActivityPage() {
   return (
