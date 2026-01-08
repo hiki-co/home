@@ -4,7 +4,7 @@ export default function VisionPage() {
   return (
     <PageLayout>
       <div className="py-16 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="mb-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl font-light text-muted-foreground mb-4">かんがえ</h1>

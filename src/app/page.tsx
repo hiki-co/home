@@ -23,7 +23,7 @@ export default function HomePage() {
           <div className="bg-blur-circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-accent/15"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto text-center relative">
+        <div className="max-w-5xl mx-auto text-center relative">
           {/* Icon & Title */}
           <div className="mb-8">
             <div className="flex justify-center mb-6 animate-scale-in">
