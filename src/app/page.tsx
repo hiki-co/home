@@ -1,13 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
-import { GitHubCorner } from "@/components/GitHubCorner";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <GitHubCorner />
 
       {/* Hero Section - Full viewport height */}
       <section className="flex-1 min-h-screen relative flex items-center justify-center px-4 md:px-8 overflow-hidden">
