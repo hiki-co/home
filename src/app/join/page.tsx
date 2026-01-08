@@ -52,25 +52,25 @@ export default function JoinPage() {
             </div>
           </div>
 
-          {/* FAQ */}
+          {/* Notes */}
           <div className="mb-10 animate-fade-in-up stagger-3">
-            <h2 className="text-xl font-light text-foreground mb-4">よくある質問</h2>
+            <h2 className="text-xl font-light text-foreground mb-4">はじめに</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div className="hiki-card-interactive group">
-                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">Q. お金かかる？</div>
-                <div className="text-xs text-muted-foreground">A. 今のところ無料。</div>
+                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">個人の集まり</div>
+                <div className="text-xs text-muted-foreground">法人じゃない。雇用関係もない。</div>
               </div>
               <div className="hiki-card-interactive group">
-                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">Q. 毎日何かしないとダメ？</div>
-                <div className="text-xs text-muted-foreground">A. 別に。やりたい時だけ。</div>
+                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">稼ぎ方は自由</div>
+                <div className="text-xs text-muted-foreground">各自が個人事業主として動く形。</div>
               </div>
               <div className="hiki-card-interactive group">
-                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">Q. 顔出し必要？</div>
-                <div className="text-xs text-muted-foreground">A. 不要。アイコンでもアバターでも。</div>
+                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">自営業になれる</div>
+                <div className="text-xs text-muted-foreground">開業届出せば無料。働いてるふりができる。</div>
               </div>
               <div className="hiki-card-interactive group">
-                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">Q. どうやって参加するの？</div>
-                <div className="text-xs text-muted-foreground">A. 下のDiscordリンクから。</div>
+                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">途中離脱OK</div>
+                <div className="text-xs text-muted-foreground">抜けるのも自由。理由も聞かない。</div>
               </div>
             </div>
           </div>
