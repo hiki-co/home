@@ -58,11 +58,11 @@ export default function JoinPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div className="hiki-card-interactive group">
                 <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">個人の集まり</div>
-                <div className="text-xs text-muted-foreground">法人じゃない。雇用関係もない。</div>
+                <div className="text-xs text-muted-foreground">全員自営業。対等な関係。</div>
               </div>
               <div className="hiki-card-interactive group">
                 <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">稼ぎ方は自由</div>
-                <div className="text-xs text-muted-foreground">各自が個人事業主として動く形。</div>
+                <div className="text-xs text-muted-foreground">個人事業主でもマイクロ法人でも。</div>
               </div>
               <div className="hiki-card-interactive group">
                 <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">自営業になれる</div>
