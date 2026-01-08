@@ -384,15 +384,23 @@ html {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 30;
+  z-index: 50;
 }
 
 .github-corner-svg {
-  fill: rgba(122, 107, 138, 0.9);
+  fill: rgba(122, 107, 138, 0.85);
   color: #ffffff;
   border: 0;
-  width: 64px;
-  height: 64px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .github-corner-svg {
+    fill: rgba(184, 168, 200, 0.9);
+  }
+}
+
+.dark .github-corner-svg {
+  fill: rgba(184, 168, 200, 0.9);
 }
 
 .github-corner:hover .octo-arm {
