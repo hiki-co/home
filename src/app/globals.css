@@ -788,34 +788,34 @@ html {
   }
 }
 
-/* Animation classes - 遅めのイージング */
+/* Animation classes - さくさく表示 */
 .animate-fade-in-up {
-  animation: fade-in-up 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: fade-in-up 0.6s ease-out forwards;
 }
 
 .animate-fade-in {
-  animation: fade-in 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: fade-in 0.5s ease-out forwards;
 }
 
 .animate-slide-in-right {
-  animation: slide-in-right 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: slide-in-right 0.5s ease-out forwards;
 }
 
 .animate-scale-in {
-  animation: scale-in 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: scale-in 0.5s ease-out forwards;
 }
 
 .animate-lazy-float {
   animation: lazy-float 4s ease-in-out infinite;
 }
 
-/* Staggered animations - 程よい遅延 */
-.stagger-1 { animation-delay: 0.1s; }
-.stagger-2 { animation-delay: 0.2s; }
-.stagger-3 { animation-delay: 0.3s; }
-.stagger-4 { animation-delay: 0.4s; }
-.stagger-5 { animation-delay: 0.5s; }
-.stagger-6 { animation-delay: 0.5s; }
+/* Staggered animations - ほぼ同時表示 */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.25s; }
 
 /* Initial state for animations */
 [class*="animate-"]:not(.animate-lazy-float):not(.animate-pulse) {
