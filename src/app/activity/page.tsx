@@ -9,7 +9,7 @@ export default function ActivityPage() {
           <div className="mb-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl font-light text-foreground mb-4">やりたいこと</h1>
             <div className="section-divider mb-4"></div>
-            <p className="text-lg text-muted-foreground">妄想とロードマップ</p>
+            <p className="text-lg text-muted-foreground">妄想</p>
           </div>
 
           {/* Current Activities */}
@@ -52,7 +52,7 @@ export default function ActivityPage() {
           </div>
 
           {/* Future Plans */}
-          <div className="mb-10 animate-fade-in-up stagger-2">
+          <div className="animate-fade-in-up stagger-2">
             <h2 className="text-xl font-light text-foreground mb-6">作りたい場所（妄想）</h2>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -71,42 +71,6 @@ export default function ActivityPage() {
               <div className="hiki-card-interactive border-l-2 border-l-primary/40">
                 <h4 className="text-sm text-foreground mb-1 font-medium">心</h4>
                 <p className="text-xs text-muted-foreground">居場所とか</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Roadmap */}
-          <div className="animate-fade-in-up stagger-3">
-            <h2 className="text-xl font-light text-foreground mb-6">ロードマップ（妄想）</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
-              <div className="hiki-card-interactive">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs text-muted-foreground/60">Phase 0</span>
-                  <span className="hiki-tag-mint text-xs">✓</span>
-                </div>
-                <p className="text-sm text-muted-foreground">ホームページ作る</p>
-              </div>
-              <div className="hiki-card-interactive">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs text-muted-foreground/60">Phase 1</span>
-                  <span className="hiki-tag-peach text-xs">次</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Discordで仲間募集</p>
-              </div>
-              <div className="hiki-card-interactive">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs text-muted-foreground/60">Phase 2</span>
-                  <span className="hiki-tag text-xs">いつか</span>
-                </div>
-                <p className="text-sm text-muted-foreground">何か売り始める</p>
-              </div>
-              <div className="hiki-card-interactive">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs text-muted-foreground/60">Phase 3</span>
-                  <span className="hiki-tag-sky text-xs">夢</span>
-                </div>
-                <p className="text-sm text-muted-foreground">衣食住心の実現</p>
               </div>
             </div>
           </div>

@@ -49,33 +49,8 @@ export default function VisionPage() {
             </div>
           </div>
 
-          {/* What we don't do */}
-          <div className="mb-10 animate-fade-in-up stagger-3">
-            <h2 className="text-xl font-light text-foreground mb-4">やらないこと</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              <div className="hiki-card-interactive">
-                <p className="text-sm text-muted-foreground">外出を目標にする</p>
-              </div>
-              <div className="hiki-card-interactive">
-                <p className="text-sm text-muted-foreground">「社会復帰」と言う</p>
-              </div>
-              <div className="hiki-card-interactive">
-                <p className="text-sm text-muted-foreground">ノルマを作る</p>
-              </div>
-              <div className="hiki-card-interactive">
-                <p className="text-sm text-muted-foreground">顔出しを強制する</p>
-              </div>
-              <div className="hiki-card-interactive">
-                <p className="text-sm text-muted-foreground">理由を聞く</p>
-              </div>
-              <div className="hiki-card-interactive">
-                <p className="text-sm text-muted-foreground">励ます</p>
-              </div>
-            </div>
-          </div>
-
           {/* Goal */}
-          <div className="animate-fade-in-up stagger-4">
+          <div className="animate-fade-in-up stagger-3">
             <div className="glass rounded-2xl p-6 glow">
               <h2 className="text-xl font-light text-foreground mb-4 gradient-text">目指すもの</h2>
               <p className="text-muted-foreground">
