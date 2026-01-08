@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx shadcn@latest add button card)"
+      "Bash(npx shadcn@latest add button card)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

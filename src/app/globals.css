@@ -212,11 +212,11 @@
   }
 
   .hiki-heading {
-    @apply text-xl font-normal text-muted-foreground mb-2;
+    @apply text-xl font-normal text-foreground mb-2;
   }
 
   .hiki-subheading {
-    @apply text-sm text-muted-foreground/60;
+    @apply text-sm text-muted-foreground;
   }
 
   /* セクション区切り線 - クレヨンで引いたような線 */
@@ -414,7 +414,18 @@ html {
 
 /* Navbar */
 .navbar-transparent {
-  background: transparent;
+  background: rgba(248, 247, 250, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar-transparent {
+    background: rgba(26, 24, 30, 0.5);
+  }
+}
+
+.dark .navbar-transparent {
+  background: rgba(26, 24, 30, 0.5);
 }
 
 .navbar-scrolled {
@@ -437,12 +448,12 @@ html {
 
 /* Buttons - おもちゃっぽいボタン */
 .hiki-btn {
-  @apply bg-muted-foreground/10 text-muted-foreground;
-  @apply border border-border/50;
+  @apply bg-primary/15 text-foreground;
+  @apply border border-primary/30;
   @apply transition-all duration-300;
   /* 不規則な角丸 */
   border-radius: 14px 10px 12px 16px;
-  box-shadow: 2px 2px 0 rgba(122, 107, 138, 0.1);
+  box-shadow: 2px 2px 0 rgba(122, 107, 138, 0.15);
   position: relative;
 }
 
@@ -458,22 +469,22 @@ html {
 }
 
 .hiki-btn:hover {
-  @apply bg-muted-foreground/20;
+  @apply bg-primary/25;
   transform: translateY(-1px) rotate(-0.5deg);
-  box-shadow: 3px 3px 0 rgba(122, 107, 138, 0.12);
+  box-shadow: 3px 3px 0 rgba(122, 107, 138, 0.2);
 }
 
 .hiki-btn:active {
   transform: translateY(1px);
-  box-shadow: 1px 1px 0 rgba(122, 107, 138, 0.08);
+  box-shadow: 1px 1px 0 rgba(122, 107, 138, 0.1);
 }
 
 .hiki-btn-secondary {
-  @apply bg-transparent text-muted-foreground;
-  @apply border border-border/50;
+  @apply bg-transparent text-foreground;
+  @apply border border-border;
   @apply transition-all duration-300;
   border-radius: 12px 16px 14px 10px;
-  box-shadow: 2px 2px 0 rgba(122, 107, 138, 0.08);
+  box-shadow: 2px 2px 0 rgba(122, 107, 138, 0.1);
   position: relative;
 }
 
@@ -489,14 +500,14 @@ html {
 }
 
 .hiki-btn-secondary:hover {
-  @apply bg-muted-foreground/10;
+  @apply bg-muted;
   transform: translateY(-1px) rotate(0.5deg);
-  box-shadow: 3px 3px 0 rgba(122, 107, 138, 0.1);
+  box-shadow: 3px 3px 0 rgba(122, 107, 138, 0.12);
 }
 
 .hiki-btn-secondary:active {
   transform: translateY(1px);
-  box-shadow: 1px 1px 0 rgba(122, 107, 138, 0.06);
+  box-shadow: 1px 1px 0 rgba(122, 107, 138, 0.08);
 }
 
 /* Glass morphism - 半透明の紙っぽく */
@@ -798,13 +809,13 @@ html {
   animation: lazy-float 4s ease-in-out infinite;
 }
 
-/* Staggered animations - もっとゆっくり */
-.stagger-1 { animation-delay: 0.15s; }
-.stagger-2 { animation-delay: 0.3s; }
-.stagger-3 { animation-delay: 0.45s; }
-.stagger-4 { animation-delay: 0.6s; }
-.stagger-5 { animation-delay: 0.75s; }
-.stagger-6 { animation-delay: 0.9s; }
+/* Staggered animations - 程よい遅延 */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.5s; }
 
 /* Initial state for animations */
 [class*="animate-"]:not(.animate-lazy-float):not(.animate-pulse) {
