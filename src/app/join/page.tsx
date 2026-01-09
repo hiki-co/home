@@ -64,19 +64,19 @@ export default function JoinPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div className="hiki-card-interactive group">
                 <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">個人の集まり</div>
-                <div className="text-xs text-muted-foreground">全員自営業。対等な関係。</div>
+                <div className="text-xs text-muted-foreground">全員自営業。対等な関係。雇用関係なし、指揮命令もなし。</div>
               </div>
               <div className="hiki-card-interactive group">
                 <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">稼ぎ方は自由</div>
-                <div className="text-xs text-muted-foreground">個人事業主でもマイクロ法人でも。</div>
+                <div className="text-xs text-muted-foreground">個人事業主でもマイクロ法人でも。手帳あるなら個人事業主の方が税制優遇あり。</div>
               </div>
               <div className="hiki-card-interactive group">
                 <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">自営業になれる</div>
-                <div className="text-xs text-muted-foreground">開業届出せば無料。働いてるふりができる。</div>
+                <div className="text-xs text-muted-foreground">開業届出せば無料。無職から自営業に。肩書きが手に入る。</div>
               </div>
               <div className="hiki-card-interactive group">
                 <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">途中離脱OK</div>
-                <div className="text-xs text-muted-foreground">抜けるのも自由。理由も聞かない。</div>
+                <div className="text-xs text-muted-foreground">抜けるのも自由。理由も聞かない。自営業はそのまま続けられる。</div>
               </div>
             </div>
           </div>
