@@ -38,7 +38,7 @@ export default function HomePage() {
               hiki co.
             </h1>
             <p className="text-base text-muted-foreground animate-fade-in-up stagger-2">
-              家から出ないけど、稼ぐ
+              家から出ないで稼ぐ
             </p>
           </div>
 

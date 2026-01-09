@@ -3,7 +3,7 @@ import { PageLayout } from '@/components/PageLayout'
 
 export const metadata: Metadata = {
   title: 'はいる | hiki co.',
-  description: '参加したい人へ',
+  description: '家から出たくない人向け',
 }
 
 export default function JoinPage() {
@@ -15,7 +15,7 @@ export default function JoinPage() {
           <div className="mb-10 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl font-light text-foreground mb-4">はいる</h1>
             <div className="section-divider mb-4"></div>
-            <p className="text-lg text-muted-foreground">参加したい人へ</p>
+            <p className="text-lg text-muted-foreground">家から出たくない人向け</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
@@ -24,13 +24,13 @@ export default function JoinPage() {
               <h2 className="text-xl font-light text-foreground mb-4">こんな人</h2>
               <div className="grid grid-cols-2 gap-3">
                 <div className="hiki-card-interactive">
-                  <h4 className="text-sm text-foreground font-medium">家から出ない</h4>
+                  <h4 className="text-sm text-foreground font-medium">家から出たくない</h4>
                 </div>
                 <div className="hiki-card-interactive">
-                  <h4 className="text-sm text-foreground font-medium">ゆるく稼ぎたい</h4>
+                  <h4 className="text-sm text-foreground font-medium">嫌なことして働きたくない</h4>
                 </div>
                 <div className="hiki-card-interactive">
-                  <h4 className="text-sm text-foreground font-medium">仲間欲しい</h4>
+                  <h4 className="text-sm text-foreground font-medium">でも稼ぎたい</h4>
                 </div>
                 <div className="hiki-card-interactive">
                   <h4 className="text-sm text-foreground font-medium">なんとなく</h4>
@@ -60,23 +60,23 @@ export default function JoinPage() {
 
           {/* Notes */}
           <div className="mb-10 animate-fade-in-up stagger-3">
-            <h2 className="text-xl font-light text-foreground mb-4">はじめに</h2>
+            <h2 className="text-xl font-light text-foreground mb-4">知っておいてほしいこと</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div className="hiki-card-interactive group">
-                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">個人の集まり</div>
-                <div className="text-xs text-muted-foreground">全員自営業。対等な関係。雇用関係なし、指揮命令もなし。</div>
+                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">会社じゃない</div>
+                <div className="text-xs text-muted-foreground">雇用関係なし。上下関係なし。指示もしない。</div>
               </div>
               <div className="hiki-card-interactive group">
-                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">稼ぎ方は自由</div>
-                <div className="text-xs text-muted-foreground">個人事業主でもマイクロ法人でも。手帳あるなら個人事業主の方が税制優遇あり。</div>
+                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">好きにやっていい</div>
+                <div className="text-xs text-muted-foreground">個人事業主でも法人でも。やり方は自由。</div>
               </div>
               <div className="hiki-card-interactive group">
-                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">自営業になれる</div>
-                <div className="text-xs text-muted-foreground">開業届出せば無料。無職から自営業に。肩書きが手に入る。</div>
+                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">開業届出すと自営業</div>
+                <div className="text-xs text-muted-foreground">無料。無職から自営業になれる。肩書きほしければ。</div>
               </div>
               <div className="hiki-card-interactive group">
-                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">途中離脱OK</div>
-                <div className="text-xs text-muted-foreground">抜けるのも自由。理由も聞かない。自営業はそのまま続けられる。</div>
+                <div className="text-sm text-foreground mb-1 group-hover:text-primary transition-colors">やめるのも自由</div>
+                <div className="text-xs text-muted-foreground">理由聞かない。自営業はそのまま続けられる。</div>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function JoinPage() {
                     Discord
                   </div>
                 </div>
-                <p className="text-sm text-muted-foreground">雑談とか相談とか。</p>
+                <p className="text-sm text-muted-foreground">雑談とか。仕事の話もたまに。</p>
               </a>
               <a
                 href="https://github.com/hiki-co"
